@@ -9,7 +9,12 @@ face_recognition.pyで顔認証
 pip install requirements.txt
 ```
 
-## dockerで実行
+
+```bash
+mkdir dataset
+```
+
+## dockerで実行 (カメラの都合上使えない)
 ```bash
 docker build -t face_recognition .
 docker run -it --rm -v $(pwd):/app face_recognition
